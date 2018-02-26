@@ -1,0 +1,15 @@
+<disabilities xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+              xsi:noNamespaceSchemaLocation="disabilities.xsd" >
+    <disability id="1">
+        <name_de>LÃ¤hmung</name_de>
+    </disability>
+    <disability id="2">
+        <name_de>Blind</name_de>
+    </disability>    
+    <disability id="3">
+        <name_de>Taub</name_de>
+    </disability>       
+    <disability id="4" >
+        <name_de>Sehschwäche</name_de>
+    </disability>
+</disabilities>
