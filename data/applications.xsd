@@ -19,6 +19,8 @@
                 <xs:element name="status" type="applicationType"/>
                 <xs:element name="amount_night_stays" type="xs:integer"/>
                 <xs:element name="prepaied" type="xs:boolean"/>
+                    <xs:element name="participant-ref" type="xs:integer"/>
+                    <xs:element name="event-ref" type="xs:integer"/>
             </xs:sequence>            		
             <xs:attribute name="id" type="xs:integer" use="required" />
         </xs:complexType>
@@ -27,7 +29,7 @@
     <xs:simpleType name="applicationType">
         <xs:restriction base="xs:string">
             <xs:enumeration value="Angemeldet"/>
-            <xs:enumeration value="Bestätigt"/>
+            <xs:enumeration value="Bestï¿½tigt"/>
             <xs:enumeration value="Abgemeldet"/>
         </xs:restriction>
     </xs:simpleType>
