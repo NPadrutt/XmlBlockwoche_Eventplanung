@@ -16,7 +16,7 @@
     <xs:element name="event">
         <xs:complexType>
             <xs:sequence>			
-                <xs:element name="date" type="xs:date"/>                						
+                <xs:element name="date" type="xs:date"/>               						
                 <xs:element name="ort" type="xs:string"/>
                 <xs:element name="kosten" type="xs:decimal"/>
                 <xs:element name="max_participants" type="xs:integer"/>
