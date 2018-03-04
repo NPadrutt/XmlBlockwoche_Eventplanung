@@ -2,14 +2,21 @@
               xsi:noNamespaceSchemaLocation="disabilities.xsd" >
     <disability id="1">
         <name_de>Lähmung</name_de>
+        <description_de>Lorem ipsum dolorem .... </description_de>
     </disability>
     <disability id="2">
         <name_de>Blind</name_de>
+        <description_de>Für Blinde bieten wir ... </description_de>
+        
     </disability>    
     <disability id="3">
         <name_de>Taub</name_de>
+        <description_de>Bei einem kompletten Hörverlust  ... </description_de>
+        
     </disability>       
     <disability id="4" >
-        <name_de>Sehschw�che</name_de>
+        <name_de>Sehschwäche</name_de>
+        <description_de>Unterschied zu Blindheit .... </description_de>
+        
     </disability>
 </disabilities>

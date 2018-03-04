@@ -1,3 +1,58 @@
 <events>
-    <>
+	<event id="1">
+		<date_beginning>2018-02-03T09:05:00</date_beginning>
+		<date_end>2018-02-08T16:00:00</date_end>
+		<name>XML-Blockwoche</name>
+		<location>S41.309</location>
+		<participation_fee>-</participation_fee>
+		<max_participants>30</max_participants>
+	</event>
+	<event id="2">
+		<date_beginning>2018-04-03T10:00:00</date_beginning>
+		<date_end>2018-04-08T12:00:00</date_end>
+		<name>Yoga</name>
+		<location>Halle A</location>
+		<participation_fee>100</participation_fee>
+		<max_participants>30</max_participants>
+	</event>
+	<event id="3">
+		<date_beginning>2018-04-09T12:00:00</date_beginning>
+		<date_end>2018-04-00T15:00:00</date_end>
+		<name>Schwimmen</name>
+		<location>Schwimmbad</location>
+		<participation_fee>120</participation_fee>
+		<max_participants>10</max_participants>
+	</event>
+	<event id="4">
+		<date_beginning>2018-04-22T18:00:00</date_beginning>
+		<date_end>2018-02-22T19:00:00</date_end>
+		<name>Gymnastik für Blinde</name>
+		<location>Halle C</location>
+		<participation_fee>50</participation_fee>
+		<max_participants>18</max_participants>
+	</event>
+	<event id="5">
+		<date_beginning>2018-05-03T10:00:00</date_beginning>
+		<date_end>2018-05-08T18:00:00</date_end>
+		<name>Tennis-Turnier</name>
+		<location>Halle D</location>
+		<participation_fee>120</participation_fee>
+		<max_participants>12</max_participants>
+	</event>
+	<event id="6">
+		<date_beginning>2018-05-10T17:00:00</date_beginning>
+		<date_end>2018-05-10T20:00:00</date_end>
+		<name>Volleyball für Einarmige</name>
+		<location>Halle D</location>
+		<participation_fee>-</participation_fee>
+		<max_participants>30</max_participants>
+	</event>
+	<event id="7">
+		<date_beginning>2018-05-19T10:00:00</date_beginning>
+		<date_end>2018-05-20T19:00:00</date_end>
+		<name>Sportwochenende</name>
+		<location>Sportzentrum</location>
+		<participation_fee>	200</participation_fee>
+		<max_participants>60</max_participants>
+	</event>
 </events>

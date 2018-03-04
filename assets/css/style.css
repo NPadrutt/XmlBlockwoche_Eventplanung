@@ -1,0 +1,75 @@
+#topnav {
+	background-color: #353837;
+	margin-bottom:80px;
+}
+
+#topnav a{
+	color:#fff;
+}
+
+#logo{
+	height:55px;
+	padding:2px 0;
+}
+
+table#events th {
+	font-weight:bold;
+	color: #182825;
+}
+
+table#events td{
+	color:#182825;
+}
+
+
+span.status{
+	color:#fff;
+	padding:2px 8px;	
+	border-radius:2px;
+}
+
+span.status.ok{
+	background-color:#09cea1;
+}
+
+span.status.unknown{
+	background-color:#735556;
+}
+
+tr.stall_UNKNOWN{
+	background-color:#F2DADA;
+}
+
+span.status.warning{
+	background-color:#CEA109;
+}
+
+span.status.critical{
+	background-color:#CE383D;
+}
+
+span.status.emergency{
+	background-color:#D0396B;
+}
+
+span.signal{
+
+}
+
+span.signal.ok{
+	color:#09cea1;
+}
+
+span.signal.fail{
+	color:#ce093c;
+}
+
+
+
+
+
+
+
+
+
+
