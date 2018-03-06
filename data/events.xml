@@ -1,12 +1,34 @@
-<events>
+<events xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="events.xsd" >
 	<event id="1">
 		<date_beginning>2018-02-03T09:05:00</date_beginning>
 		<date_end>2018-02-08T16:00:00</date_end>
 		<name>XML-Blockwoche</name>
 		<location>S41.309</location>
-		<participation_fee>-</participation_fee>
+		<participation_fee>0</participation_fee>
 		<max_participants>30</max_participants>
-	</event>
+			<participants>
+				<participant id="1">
+					<prename>Hans</prename>
+					<name>Meier</name>
+					<street>Musterstrasse 27</street>
+					<zipcode>1234</zipcode>
+					<city>Entenhausen</city>
+					<phonenumber>0791234567</phonenumber>
+					<email>test@me.ch</email>
+					<prepaied>true</prepaied>
+				</participant>
+				<participant id="2">
+					<prename>Henriette</prename>
+					<name>Probst</name>
+					<street>Holunderweg 2</street>
+					<zipcode>4321</zipcode>
+					<city>Entenhausen</city>
+					<phonenumber>0781478523</phonenumber>
+					<email>holi@me.ch</email>
+					<prepaied>true</prepaied>
+				</participant>
+			</participants>
+        </event>
 	<event id="2">
 		<date_beginning>2018-04-03T10:00:00</date_beginning>
 		<date_end>2018-04-08T12:00:00</date_end>
@@ -17,7 +39,7 @@
 	</event>
 	<event id="3">
 		<date_beginning>2018-04-09T12:00:00</date_beginning>
-		<date_end>2018-04-00T15:00:00</date_end>
+		<date_end>2018-04-09T15:00:00</date_end>
 		<name>Schwimmen</name>
 		<location>Schwimmbad</location>
 		<participation_fee>120</participation_fee>
@@ -44,7 +66,7 @@
 		<date_end>2018-05-10T20:00:00</date_end>
 		<name>Volleyball für Einarmige</name>
 		<location>Halle D</location>
-		<participation_fee>-</participation_fee>
+		<participation_fee>0</participation_fee>
 		<max_participants>30</max_participants>
 	</event>
 	<event id="7">
@@ -52,7 +74,7 @@
 		<date_end>2018-05-20T19:00:00</date_end>
 		<name>Sportwochenende</name>
 		<location>Sportzentrum</location>
-		<participation_fee>	200</participation_fee>
+		<participation_fee>200</participation_fee>
 		<max_participants>60</max_participants>
 	</event>
 </events>
