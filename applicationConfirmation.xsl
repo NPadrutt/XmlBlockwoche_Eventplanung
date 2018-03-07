@@ -34,10 +34,67 @@
     </xsl:template>
     
     <xsl:template match="event">
-        
-        <fo:block break-after="page" color="black">
+
+        <!-- Adressheader -->
+        <fo:block color="black">
             <xsl:apply-templates select="participants"/>
         </fo:block>
+
+        <fo:block linefeed-treatment="preserve">
+            <xsl:text>&#xA;</xsl:text>
+            <xsl:text>&#xA;</xsl:text>
+        </fo:block>
+
+        <fo:block font-size="19pt"
+                  font-weight="bold"
+                  font-family="sans-serif"
+                  line-height="24pt"
+                  space-after.optimum="20pt"
+                  text-align="left">
+            <xsl:value-of select="name" />
+        </fo:block>
+
+        <fo:block font-weight="bold">Liebe Teilnehmerin, Lieber Teilnehmer</fo:block>
+
+        <fo:block>
+            Wir bestätigen dir hiermit gerne deine Anmeldung.
+            Anschliessend findest du alle Informationen zu der Verantstaltung:
+        </fo:block>
+
+        <fo:block linefeed-treatment="preserve">
+            <xsl:text>&#xA;</xsl:text>
+        </fo:block>
+
+        <fo:block>Datum Begin:  <xsl:value-of select="date_beginning" /></fo:block>
+        <fo:block>Datum Ende:  <xsl:value-of select="date_end" /></fo:block>
+        <fo:block>Ort:  <xsl:value-of select="location" /></fo:block>
+        <fo:block>Gebühren:  <xsl:value-of select="participation_fee" /></fo:block>
+        <fo:block>Maximal Teilnehmer:  <xsl:value-of select="max_participants" /></fo:block>
+
+        <fo:block linefeed-treatment="preserve">
+            <xsl:text>&#xA;</xsl:text>
+        </fo:block>
+
+        <fo:block>Wir freuen uns auf eine tolle Zeit mit dir. Bei Fragen, zögere nicht dich direkt bei uns zu melden.</fo:block>
+
+        <fo:block linefeed-treatment="preserve">
+            <xsl:text>&#xA;</xsl:text>
+        </fo:block>
+
+        <fo:block>Liebe Grüsse</fo:block>
+        <fo:block>Dein Veranstaltungsteam</fo:block>
+
+        <fo:block linefeed-treatment="preserve">
+            <xsl:text>&#xA;</xsl:text>
+        </fo:block>
+
+        <fo:block>XML Sporthalle</fo:block>
+        <fo:block>Speichermatte 42</fo:block>
+        <fo:block>4004 Basel</fo:block>
+
+        <fo:block>Email: info@xml-sporthalle.ch</fo:block>
+        <fo:block>Telefon: 041 420 12 34</fo:block>
+
     </xsl:template>
 
     <xsl:template match="participants">
@@ -49,17 +106,16 @@
             <xsl:value-of select="prename"/>
             <xsl:text> </xsl:text>
             <xsl:value-of select="name"/>  
-        <fo:block/>
+        </fo:block>
         <xsl:value-of select="street"/>
-        <fo:block/>
+
         <fo:block  white-space-collapse="false">
             <xsl:value-of select="zipcode"/>
             <xsl:value-of select="city"/>
         </fo:block>
         <xsl:value-of select="phonenumber"/>
-        <fo:block/>
         <xsl:value-of select="customer/mail"/>
-        </fo:block>
+
     </xsl:template>
 </xsl:transform>
 
