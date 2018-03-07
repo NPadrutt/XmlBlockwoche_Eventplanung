@@ -4,6 +4,7 @@
 require_once 'fop_service_client.php';
 
 $eventIdParamFromInput =  1; //$_POST["eventIdParamFromInput"];
+$participantIdParamFromInput =  1; //$_POST["eventIdParamFromInput"];
 $targetFile = 'confirmation.fo';
 
 $xmlDoc = new DOMDocument();
@@ -14,6 +15,7 @@ $xslDoc->load("applicationConfirmation.xsl");
 
 $proc = new XSLTProcessor();
 $proc->setParameter('','eventIdParam',$eventIdParamFromInput);
+$proc->setParameter('','participantIdParam',$participantIdParamFromInput);
 $proc->importStylesheet($xslDoc);
 $xml = $proc->transformToXML($xmlDoc);
 

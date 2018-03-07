@@ -4,6 +4,10 @@
     <xsl:param name="eventIdParam">
         <!-- Content:template -->
     </xsl:param>
+
+    <xsl:param name="participantIdParam">
+        <!-- Content:template -->
+    </xsl:param>
     
     <xsl:template match="events">
         <fo:root>
@@ -32,17 +36,18 @@
     <xsl:template match="event">
         
         <fo:block break-after="page" color="black">
-            <xsl:text>Huhu</xsl:text>
-
-            <xsl:apply-templates select="participant"/>
-            
-        </fo:block>        
+            <xsl:apply-templates select="participants"/>
+        </fo:block>
     </xsl:template>
-    
+
+    <xsl:template match="participants">
+        <xsl:apply-templates select="participant[@id=$participantIdParam]"/>
+    </xsl:template>
+
     <xsl:template match="participant">
-        <xsl:text>Huhu</xsl:text>
         <fo:block color="black">
             <xsl:value-of select="prename"/>
+            <xsl:text> </xsl:text>
             <xsl:value-of select="name"/>  
         <fo:block/>
         <xsl:value-of select="street"/>
