@@ -64,6 +64,9 @@ span.signal.fail{
 	color:#ce093c;
 }
 
+.uk-navbar-item, .uk-navbar-nav > li > a{
+	font-size:1.1em;
+}
 
 
 

@@ -1,16 +1,32 @@
 <?php
 
-function get_events_by_disability($disability_id, $event_disabilty_relations_xml)
-{
-    $supported_events = $event_disabilty_relations_xml->xpath("//relation/disability_id[text()='" . $disability_id . "']/../event_id/text()");
-    $supported_events_array = array();
+
+function get_events_by_disability($disability_id) {
+    $data = file_get_contents('data/events.xml');
+    $xml = new DOMDocument();
+    $xml->loadXML($data);
     
-    foreach ($supported_events as $event_id) {
-        $event_id = (string) $event_id;
-        array_push($supported_events_array, $event_id);
+    // load XSL
+    $xsl = new DOMDocument();
+    $xsl->load('data/events.xsl');
+    
+    // determine disability parameter
+    $category = "index";
+    if (isset($_GET["category"])){
+        $category = $_GET["category"];
     }
-    return $supported_events_array;
+    
+    // transform
+    $processor = new XSLTProcessor();
+    $processor->importStylesheet($xsl);
+    $processor->setParameter("", "category", $category);
+    $dom = $processor->transformToDoc($xml);
+    
+    // send result to client
+    return $dom->saveXML();
+
 }
+
 
 function get_disabilities_by_event($event_id, $event_disabilty_relations_xml)
 {

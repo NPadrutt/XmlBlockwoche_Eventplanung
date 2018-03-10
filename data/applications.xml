@@ -1,0 +1,68 @@
+<applications xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="disabilities.xsd">
+	<application id="1">
+		<event_id>2</event_id>
+		<prename>Hans</prename>
+		<name>Meier</name>
+		<street>Musterstrasse 27</street>
+		<zipcode>1234</zipcode>
+		<city>Entenhausen</city>
+		<phonenumber>0791234567</phonenumber>
+		<email>test@me.ch</email>
+		<prepaied>true</prepaied>
+	</application>
+	<application id="2">
+		<prename>Henriette</prename>
+		<name>Probst</name>
+		<street>Holunderweg 2</street>
+		<zipcode>4321</zipcode>
+		<city>Entenhausen</city>
+		<phonenumber>0781478523</phonenumber>
+		<email>holi@me.ch</email>
+		<prepaied>true</prepaied>
+	</application>
+	<application id="3">
+		<event_id>3</event_id>
+		<prename>Henriette</prename>
+		<name>Probst</name>
+		<street>Holunderweg 2</street>
+		<zipcode>4321</zipcode>
+		<city>Entenhausen</city>
+		<phonenumber>0781478523</phonenumber>
+		<email>holi@me.ch</email>
+		<prepaied>false</prepaied>
+	</application>
+	<application id="4">
+		<event_id>4</event_id>
+		<prename>Henriette</prename>
+		<name>Probst</name>
+		<street>Holunderweg 2</street>
+		<zipcode>4321</zipcode>
+		<city>Entenhausen</city>
+		<phonenumber>0781478523</phonenumber>
+		<email>holi@me.ch</email>
+		<prepaied>false</prepaied>
+	</application>
+	<application id="5">
+		<event_id>5</event_id>
+		<prename>Henriette</prename>
+		<name>Probst</name>
+		<street>Holunderweg 2</street>
+		<zipcode>4321</zipcode>
+		<city>Entenhausen</city>
+		<phonenumber>0781478523</phonenumber>
+		<email>holi@me.ch</email>
+		<prepaied>true</prepaied>
+	</application>
+	<application id="6">
+		<event_id>4</event_id>
+		<prename>Henriette</prename>
+		<name>Probst</name>
+		<street>Holunderweg 2</street>
+		<zipcode>4321</zipcode>
+		<city>Entenhausen</city>
+		<phonenumber>0781478523</phonenumber>
+		<email>holi@me.ch</email>
+		<prepaied>true</prepaied>
+	</application>
+</applications>

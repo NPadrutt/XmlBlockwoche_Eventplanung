@@ -6,28 +6,6 @@
 		<location>S41.309</location>
 		<participation_fee>0</participation_fee>
 		<max_participants>30</max_participants>
-			<participants>
-				<participant id="1">
-					<prename>Hans</prename>
-					<name>Meier</name>
-					<street>Musterstrasse 27</street>
-					<zipcode>1234</zipcode>
-					<city>Entenhausen</city>
-					<phonenumber>0791234567</phonenumber>
-					<email>test@me.ch</email>
-					<prepaied>true</prepaied>
-				</participant>
-				<participant id="2">
-					<prename>Henriette</prename>
-					<name>Probst</name>
-					<street>Holunderweg 2</street>
-					<zipcode>4321</zipcode>
-					<city>Entenhausen</city>
-					<phonenumber>0781478523</phonenumber>
-					<email>holi@me.ch</email>
-					<prepaied>true</prepaied>
-				</participant>
-			</participants>
         </event>
 	<event id="2">
 		<date_beginning>2018-04-03T10:00:00</date_beginning>
@@ -51,7 +29,7 @@
 		<name>Gymnastik für Blinde</name>
 		<location>Halle C</location>
 		<participation_fee>50</participation_fee>
-		<max_participants>18</max_participants>
+		<max_participants>2</max_participants>
 	</event>
 	<event id="5">
 		<date_beginning>2018-05-03T10:00:00</date_beginning>
