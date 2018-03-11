@@ -13,7 +13,7 @@
         </xs:unique>
     </xs:element>
 
-    <xs:element "application"">
+    <xs:element name="application">
         <xs:complexType>
             <xs:sequence>		
              	<xs:element name="event_id" type="xs:integer"/>

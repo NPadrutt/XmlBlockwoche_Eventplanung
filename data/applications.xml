@@ -1,6 +1,6 @@
-<applications xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:noNamespaceSchemaLocation="disabilities.xsd">
-	<application id="1">
+<?xml version="1.0"?>
+<participants xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="disabilities.xsd">
+	<participant id="1">
 		<event_id>2</event_id>
 		<prename>Hans</prename>
 		<name>Meier</name>
@@ -10,8 +10,9 @@
 		<phonenumber>0791234567</phonenumber>
 		<email>test@me.ch</email>
 		<prepaied>true</prepaied>
-	</application>
-	<application id="2">
+	</participant>
+	<participant id="2">
+		<event_id>3</event_id>
 		<prename>Henriette</prename>
 		<name>Probst</name>
 		<street>Holunderweg 2</street>
@@ -20,8 +21,8 @@
 		<phonenumber>0781478523</phonenumber>
 		<email>holi@me.ch</email>
 		<prepaied>true</prepaied>
-	</application>
-	<application id="3">
+	</participant>
+	<participant id="3">
 		<event_id>3</event_id>
 		<prename>Henriette</prename>
 		<name>Probst</name>
@@ -31,8 +32,8 @@
 		<phonenumber>0781478523</phonenumber>
 		<email>holi@me.ch</email>
 		<prepaied>false</prepaied>
-	</application>
-	<application id="4">
+	</participant>
+	<participant id="4">
 		<event_id>4</event_id>
 		<prename>Henriette</prename>
 		<name>Probst</name>
@@ -42,8 +43,8 @@
 		<phonenumber>0781478523</phonenumber>
 		<email>holi@me.ch</email>
 		<prepaied>false</prepaied>
-	</application>
-	<application id="5">
+	</participant>
+	<participant id="5">
 		<event_id>5</event_id>
 		<prename>Henriette</prename>
 		<name>Probst</name>
@@ -53,8 +54,8 @@
 		<phonenumber>0781478523</phonenumber>
 		<email>holi@me.ch</email>
 		<prepaied>true</prepaied>
-	</application>
-	<application id="6">
+	</participant>
+	<participant id="6">
 		<event_id>4</event_id>
 		<prename>Henriette</prename>
 		<name>Probst</name>
@@ -64,5 +65,5 @@
 		<phonenumber>0781478523</phonenumber>
 		<email>holi@me.ch</email>
 		<prepaied>true</prepaied>
-	</application>
-</applications>
+	</participant>
+</participants>

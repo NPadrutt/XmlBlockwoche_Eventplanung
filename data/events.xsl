@@ -8,14 +8,18 @@
 		indent="yes" />
 
 	<xsl:template match="/">
-		<table class="uk-table uk-table-divider">
+		<table class="uk-table uk-table-divider app_table">
 			<tr>
 				<tr>
 					<th>Name</th>
-					<th>Datum</th>
-					<th>Ort</th>
+					<th>
+						Datum
+						<xsl:text disable-output-escaping="yes"> &amp; </xsl:text>
+						Ort
+					</th>
 					<th>Ausgelegt für</th>
-					<th>Kapazität</th>
+					<th>Teilnehmer</th>
+					<th>Kosten</th>
 					<th>Bestellen</th>
 				</tr>
 			</tr>
@@ -28,16 +32,16 @@
 					<tr>
 
 						<td>
-							<xsl:value-of select="$disability_id" />
 							<xsl:value-of select="$event_node/name" />
 						</td>
 						<td>
-							<xsl:value-of select="$event_node/date_beginning"/>
+							<xsl:value-of select="$event_node/date_beginning" />
 							<xsl:text disable-output-escaping="yes"> &amp;mdash; </xsl:text>
+							<br />
 							<xsl:value-of select="$event_node/date_end" />
-						</td>
-						<td>
-							<xsl:value-of select="$event_node/location" />
+							<div style="padding:5px 0px;font-size:1em;">
+								<xsl:value-of select="$event_node/location" />
+							</div>
 						</td>
 						<td>
 							<xsl:for-each
@@ -52,21 +56,28 @@
 						</td>
 						<td>
 							<xsl:value-of
-								select="count(document('applications.xml')//application/event_id[text() = $event_id]/..)">
-							</xsl:value-of>
+								select="count(document('applications.xml')//participant/event_id[text() = $event_id]/..)">
+							</xsl:value-of> 
 							/
 							<xsl:value-of select="$event_node/max_participants" />
 						</td>
 						<td>
+							<xsl:value-of select="$event_node/participation_fee" />
+						</td>
+						<td>
 							<xsl:choose>
-								<xsl:when
-									test="count(document('applications.xml')//application/event_id[text() = $event_id]/..) &lt; $event_node/max_participants">
-									<button class="uk-button uk-button-primary" style="width:180px;">Anmelden
-									</button>
-
+								<xsl:when 
+									test="count(document('applications.xml')//participant/event_id[text() = $event_id]/..) &lt; $event_node/max_participants"> 
+									<a class="uk-button uk-button-primary" style="width:180px;">
+										<xsl:attribute name="href">
+									    	<xsl:value-of select="concat('application.php?event_id=', $event_id)" />
+									    </xsl:attribute>
+									    Anmelden
+									</a>
 								</xsl:when>
 								<xsl:otherwise>
-									<button class="uk-button uk-button-default full" disabled="disabled" style="width:180px;">Ausgebucht
+									<button class="uk-button uk-button-default full"
+										disabled="disabled" style="width:180px;">Ausgebucht
 									</button>
 								</xsl:otherwise>
 							</xsl:choose>

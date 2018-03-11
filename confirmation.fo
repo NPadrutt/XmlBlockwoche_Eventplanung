@@ -1,11 +1,25 @@
 <?xml version="1.0"?>
-<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format"><fo:layout-master-set><fo:simple-page-master master-name="application_confirmation" page-height="29.7cm" page-width="21cm" margin-top="1cm" margin-bottom="2cm" margin-left="2.5cm" margin-right="2.5cm"><fo:region-body margin-top="1cm"/><fo:region-before extent="2cm"/><fo:region-after extent="3cm"/></fo:simple-page-master></fo:layout-master-set><fo:page-sequence master-reference="application_confirmation"><fo:static-content flow-name="xsl-region-before"><fo:block text-align="center" font-size="8pt"><fo:page-number/></fo:block></fo:static-content><fo:flow flow-name="xsl-region-body"><fo:block font-size="19pt" font-family="sans-serif" line-height="24pt" space-after.optimum="20pt" background-color="#ADD8E6" color="white" text-align="center" padding-top="5pt" padding-bottom="5pt">Anmeldebestätigung</fo:block><fo:block color="black"><fo:block color="black">Hans Meier</fo:block>Musterstrasse 27<fo:block white-space-collapse="false">1234Entenhausen</fo:block>0791234567</fo:block><fo:block linefeed-treatment="preserve">
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format"><fo:layout-master-set><fo:simple-page-master master-name="application_confirmation" page-height="29.7cm" page-width="21cm" margin-top="1cm" margin-bottom="2cm" margin-left="2.5cm" margin-right="2.5cm"><fo:region-body margin-top="1cm"/><fo:region-before extent="2cm"/><fo:region-after extent="3cm"/></fo:simple-page-master></fo:layout-master-set><fo:page-sequence master-reference="application_confirmation"><fo:static-content flow-name="xsl-region-before"><fo:block text-align="center" font-size="8pt"><fo:page-number/></fo:block></fo:static-content><fo:flow flow-name="xsl-region-body"><fo:block font-size="19pt" font-family="sans-serif" line-height="24pt" space-after.optimum="20pt" background-color="#ADD8E6" color="white" text-align="center" padding-top="5pt" padding-bottom="5pt">Anmeldebestätigung</fo:block><fo:block color="black"/><fo:block linefeed-treatment="preserve">
 
-</fo:block><fo:block font-size="19pt" font-weight="bold" font-family="sans-serif" line-height="24pt" space-after.optimum="20pt" text-align="left">XML-Blockwoche</fo:block><fo:block font-weight="bold">Liebe Teilnehmerin, Lieber Teilnehmer</fo:block><fo:block>
-            Wir bestätigen dir hiermit gerne deine Anmeldung.
-            Anschliessend findest du alle Informationen zu der Verantstaltung:
-        </fo:block><fo:block linefeed-treatment="preserve">
-</fo:block><fo:block>Datum Begin:  2018-02-03T09:05:00</fo:block><fo:block>Datum Ende:  2018-02-08T16:00:00</fo:block><fo:block>Ort:  S41.309</fo:block><fo:block>Gebühren:  0</fo:block><fo:block>Maximal Teilnehmer:  30</fo:block><fo:block linefeed-treatment="preserve">
-</fo:block><fo:block>Wir freuen uns auf eine tolle Zeit mit dir. Bei Fragen, zögere nicht dich direkt bei uns zu melden.</fo:block><fo:block linefeed-treatment="preserve">
+</fo:block><fo:block font-size="19pt" font-weight="bold" font-family="sans-serif" line-height="24pt" space-after.optimum="20pt" text-align="left">Tennis-Turnier</fo:block><fo:block font-weight="bold">Liebe Teilnehmerin, Lieber Teilnehmer
+		</fo:block><fo:block>
+			Wir bestätigen dir hiermit gerne deine Anmeldung.
+			Anschliessend findest du alle Informationen zu der Verantstaltung:
+		</fo:block><fo:block linefeed-treatment="preserve">
+</fo:block><fo:block>
+			Veranstaltung:
+			Tennis-Turnier</fo:block><fo:block>
+			Datum Begin:
+			2018-05-03T10:00:00</fo:block><fo:block>
+			Datum Ende:
+			2018-05-08T18:00:00</fo:block><fo:block>
+			Ort:
+			Halle D</fo:block><fo:block>
+			Gebühren:
+			120</fo:block><fo:block>
+			Maximal Teilnehmer:
+			12</fo:block><fo:block linefeed-treatment="preserve">
+</fo:block><fo:block>Wir freuen uns auf eine tolle Zeit mit dir. Bei Fragen,
+			zögere nicht dich direkt bei uns zu melden.</fo:block><fo:block linefeed-treatment="preserve">
 </fo:block><fo:block>Liebe Grüsse</fo:block><fo:block>Dein Veranstaltungsteam</fo:block><fo:block linefeed-treatment="preserve">
-</fo:block><fo:block>XML Sporthalle</fo:block><fo:block>Speichermatte 42</fo:block><fo:block>4004 Basel</fo:block><fo:block>Email: info@xml-sporthalle.ch</fo:block><fo:block>Telefon: 041 420 12 34</fo:block></fo:flow></fo:page-sequence></fo:root>
+</fo:block><fo:block>XML Sporthalle</fo:block><fo:block>Speichermatte 42</fo:block><fo:block>4004 Basel</fo:block><fo:block>Email: info@xml-sporthalle.ch</fo:block><fo:block>Telefon: 041 420 12 34</fo:block><fo:block color="black">xx qxx</fo:block>xx<fo:block white-space-collapse="false">xx xx</fo:block><fo:block white-space-collapse="false">xx</fo:block><fo:block white-space-collapse="false"/></fo:flow></fo:page-sequence></fo:root>
