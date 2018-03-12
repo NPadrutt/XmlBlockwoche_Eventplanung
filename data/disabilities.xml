@@ -2,21 +2,22 @@
               xsi:noNamespaceSchemaLocation="disabilities.xsd" >
     <disability id="1">
         <name_de>Lähmung</name_de>
-        <description_de>Lorem ipsum dolorem .... </description_de>
+        <description_de>Veranstaltungen für Teil- bis Ganzkörper gelähmte.</description_de>
     </disability>
+
     <disability id="2">
         <name_de>Blind</name_de>
-        <description_de>Für Blinde bieten wir ... </description_de>
-        
+        <description_de>Unsere Anlässe bei starker Sehschwäche oder Blindheit.</description_de>
     </disability>    
+
     <disability id="3">
         <name_de>Taub</name_de>
-        <description_de>Bei einem kompletten Hörverlust  ... </description_de>
-        
+        <description_de>Veranstaltungen mit etwas anderer Kommunikation.</description_de>        
     </disability>       
+
     <disability id="4" >
         <name_de>Sehschwäche</name_de>
-        <description_de>Unterschied zu Blindheit .... </description_de>
+        <description_de>Alles für den Sehschwachen Sportbegeisterten.</description_de>
         
     </disability>
 </disabilities>
