@@ -136,7 +136,7 @@ function add_application($application_data){
     $email_node->appendChild($email_node_text);
     
     $prepaid_node = $document->createElement('prepaid');
-    $prepaid_node_text = $document->createTextnode('true');
+    $prepaid_node_text = $document->createTextnode($application_data['prepaid']);
     $prepaid_node->appendChild($prepaid_node_text);
     
     // apend new application child nodes as new child of applications

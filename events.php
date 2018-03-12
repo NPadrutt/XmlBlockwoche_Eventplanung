@@ -1,7 +1,7 @@
 <?php
 $language = "de";
 require ("incl/helper.php");
-include ("incl/header.php");
+include ("incl/header.php"); 
 ?>
 <h1>Events</h1>
 <?php
@@ -14,7 +14,7 @@ if (isset($_GET["category"])) {
     $filter_is_active = true;
 }
 echo get_events_by_disability($categoryId);
-?>
+?> 
 
 </tbody>
 </table>

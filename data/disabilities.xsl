@@ -8,8 +8,8 @@
 
 	<xsl:template match="/">
 
-		<table class="uk-table uk-table-divider">
-			<tr>
+		<table class="uk-table uk-table-divider app_table">
+			<tr class="app_table">
 				<th>Einschränkung</th>
 				<th>Beschreibung</th>
 				<th></th>
@@ -22,7 +22,7 @@
 	<!-- Add rows to table -->
 
 	<xsl:template match="disability">
-		<tr>
+		<tr class="app_table">
 			<td>
 				<xsl:value-of select="name_de" />
 			</td>
@@ -30,7 +30,7 @@
 				<xsl:value-of select="description_de" />
 			</td>
 			<td align="left">
-				<a class="uk-button uk-button-primary">
+				<a class="uk-button uk-button-primary uk-float-right">
 					<xsl:attribute name="href">
 			    	<xsl:value-of select="concat('events.php?category=', @id)" />
 			    </xsl:attribute>

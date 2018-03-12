@@ -9,28 +9,27 @@
 
 	<xsl:template match="/">
 		<table class="uk-table uk-table-divider app_table">
-			<tr>
-				<tr>
-					<th>Name</th>
-					<th>
-						Datum
-						<xsl:text disable-output-escaping="yes"> &amp; </xsl:text>
-						Ort
-					</th>
-					<th>Ausgelegt für</th>
-					<th>Teilnehmer</th>
-					<th>Kosten</th>
-					<th>Bestellen</th>
-				</tr>
+
+			<tr class="app_table">
+				<th>Name</th>
+				<th>
+					Datum
+					<xsl:text disable-output-escaping="yes"> &amp; </xsl:text>
+					Ort
+				</th>
+				<th>Ausgelegt für</th>
+				<th>Teilnehmer</th>
+				<th>Kosten</th>
+				<th>Bestellen</th>
 			</tr>
+
 			<xsl:for-each select="/events/event">
 				<xsl:variable name="event_node" select="."></xsl:variable>
 				<xsl:variable name="event_id" select="@id"></xsl:variable>
 				<xsl:if
 					test="(document('event_supports_disability.xml')//event_id[text() = $event_id]/../disability_id[text() = $category]) or ($category = 'index')">
 					<xsl:variable name="disability_id" select="../disability_id" />
-					<tr>
-
+					<tr class="app_table">
 						<td>
 							<xsl:value-of select="$event_node/name" />
 						</td>
@@ -57,7 +56,7 @@
 						<td>
 							<xsl:value-of
 								select="count(document('applications.xml')//participant/event_id[text() = $event_id]/..)">
-							</xsl:value-of> 
+							</xsl:value-of>
 							/
 							<xsl:value-of select="$event_node/max_participants" />
 						</td>
@@ -66,13 +65,14 @@
 						</td>
 						<td>
 							<xsl:choose>
-								<xsl:when 
-									test="count(document('applications.xml')//participant/event_id[text() = $event_id]/..) &lt; $event_node/max_participants"> 
+								<xsl:when
+									test="count(document('applications.xml')//participant/event_id[text() = $event_id]/..) &lt; $event_node/max_participants">
 									<a class="uk-button uk-button-primary" style="width:180px;">
 										<xsl:attribute name="href">
-									    	<xsl:value-of select="concat('application.php?event_id=', $event_id)" />
+									    	<xsl:value-of
+											select="concat('application.php?event_id=', $event_id)" />
 									    </xsl:attribute>
-									    Anmelden
+										Anmelden
 									</a>
 								</xsl:when>
 								<xsl:otherwise>
@@ -83,7 +83,6 @@
 							</xsl:choose>
 						</td>
 					</tr>
-
 				</xsl:if>
 
 			</xsl:for-each>

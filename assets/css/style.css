@@ -3,6 +3,19 @@
 	margin-bottom:80px;
 }
 
+#footer {
+	background-color: #E2E2E2;
+	margin-top:220px;
+	padding:20px 0px;
+	font-size:0.9em;	
+	color:#777777 !important;
+}
+
+.uk-container{
+	color:#404040;
+	font-size:1.1em;
+}
+
 #topnav a{
 	color:#fff;
 }
@@ -17,51 +30,12 @@ table#events th {
 	color: #182825;
 }
 
-table#events td{
-	color:#182825;
-}
 
 
-span.status{
-	color:#fff;
-	padding:2px 8px;	
-	border-radius:2px;
-}
-
-span.status.ok{
-	background-color:#09cea1;
-}
-
-span.status.unknown{
-	background-color:#735556;
-}
-
-tr.stall_UNKNOWN{
-	background-color:#F2DADA;
-}
-
-span.status.warning{
-	background-color:#CEA109;
-}
-
-span.status.critical{
-	background-color:#CE383D;
-}
-
-span.status.emergency{
-	background-color:#D0396B;
-}
-
-span.signal{
-
-}
-
-span.signal.ok{
-	color:#09cea1;
-}
-
-span.signal.fail{
-	color:#ce093c;
+ul.uk-navbar-nav li.active{
+	border-top:1px solid #7D8381;
+	border-bottom:1px solid #7D8381;
+	background-color:#565B5A;
 }
 
 .uk-navbar-item, .uk-navbar-nav > li > a{
@@ -69,9 +43,23 @@ span.signal.fail{
 }
 
 
+div.content-panel{
+	padding:15px;
+	font-size:1.1em;
+	color:#202020;
+	background-color:#F1F3F6;
+	border:1px solid #ddd;
+}
 
+table.app_table tr.app_table th{
+	font-size:1.1em;
+	color:#383838;
+}
 
-
+table.app_table tr.app_table td{
+	font-size:1em;
+	color:#484848;
+	}
 
 
 
