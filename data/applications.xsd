@@ -24,7 +24,7 @@
                 <xs:element name="city" type="xs:string"/>
                 <xs:element name="phonenumber" type="xs:string"/>
                 <xs:element name="email" type="xs:string"/>
-                <xs:element name="prepaied" type="xs:boolean"/>
+                <xs:element name="prepaid" type="xs:boolean"/>
             </xs:sequence>            		
             <xs:attribute name="id" type="xs:integer" use="required" />	
         </xs:complexType>

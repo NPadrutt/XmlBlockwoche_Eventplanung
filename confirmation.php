@@ -44,35 +44,41 @@ $application_data=array(
 );
 
 $application_xml = add_application($application_data);
-file_put_contents('data/applications.xml', $application_xml);
 
+$document = new DOMDocument();
+$document->loadXML($application_xml);
+if($document-> schemaValidate('data/applications.xsd')) {
+
+    file_put_contents('data/applications.xml', $application_xml);
 
 // generate HTML output and show results of service request
 
-require_once 'fop_service_client.php';
+    require_once 'fop_service_client.php';
 
 
+    $targetFile = 'confirmation.fo';
 
-$targetFile = 'confirmation.fo';
+    $xmlDoc = new DOMDocument();
+    $xmlDoc->load("data/events.xml");
 
-$xmlDoc = new DOMDocument();
-$xmlDoc->load("data/events.xml");
+    $xslDoc = new DOMDocument();
+    $xslDoc->load("applicationConfirmation.xsl");
 
-$xslDoc = new DOMDocument();
-$xslDoc->load("applicationConfirmation.xsl");
+    $proc = new XSLTProcessor();
+    $proc->setParameter('', 'eventIdParam', $event_id);
+    $proc->setParameter('', 'participantIdParam', $participant_id);
+    $proc->importStylesheet($xslDoc);
+    $xml = $proc->transformToXML($xmlDoc);
 
-$proc = new XSLTProcessor();
-$proc->setParameter('','eventIdParam', $event_id);
-$proc->setParameter('','participantIdParam', $participant_id);
-$proc->importStylesheet($xslDoc);
-$xml = $proc->transformToXML($xmlDoc);
+    file_put_contents($targetFile, $xml);
 
-file_put_contents($targetFile, $xml);
+    $serviceClient = new FOPServiceClient();
+    $pdfFile = $serviceClient->processFile($targetFile);
+    echo sprintf('<p>Das PDF kann mit untenstehendem Link ge&ouml;ffnet werden:<br><strong><a href="%s">%s</a></strong></p>', $pdfFile, "PDF Download");
+}
 
-$serviceClient = new FOPServiceClient();
-$pdfFile = $serviceClient->processFile($targetFile);
+echo ('<p>Die Eingaben waren nicht valide und konnten nicht gespeichert werden.</p>')
 
-echo sprintf('<p>Das PDF kann mit untenstehendem Link ge&ouml;ffnet werden:<br><strong><a href="%s">%s</a></strong></p>', $pdfFile, "PDF Download");
 ?>
 
 

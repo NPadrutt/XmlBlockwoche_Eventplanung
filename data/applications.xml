@@ -9,7 +9,7 @@
 		<city>Entenhausen</city>
 		<phonenumber>0791234567</phonenumber>
 		<email>test@me.ch</email>
-		<prepaied>true</prepaied>
+		<prepaid>true</prepaid>
 	</participant>
 	<participant id="2">
 		<event_id>3</event_id>
@@ -20,7 +20,7 @@
 		<city>Entenhausen</city>
 		<phonenumber>0781478523</phonenumber>
 		<email>holi@me.ch</email>
-		<prepaied>true</prepaied>
+		<prepaid>true</prepaid>
 	</participant>
 	<participant id="3">
 		<event_id>3</event_id>
@@ -31,7 +31,7 @@
 		<city>Entenhausen</city>
 		<phonenumber>0781478523</phonenumber>
 		<email>holi@me.ch</email>
-		<prepaied>false</prepaied>
+		<prepaid>false</prepaid>
 	</participant>
 	<participant id="4">
 		<event_id>4</event_id>
@@ -42,7 +42,7 @@
 		<city>Entenhausen</city>
 		<phonenumber>0781478523</phonenumber>
 		<email>holi@me.ch</email>
-		<prepaied>false</prepaied>
+		<prepaid>false</prepaid>
 	</participant>
 	<participant id="5">
 		<event_id>5</event_id>
@@ -53,7 +53,7 @@
 		<city>Entenhausen</city>
 		<phonenumber>0781478523</phonenumber>
 		<email>holi@me.ch</email>
-		<prepaied>true</prepaied>
+		<prepaid>true</prepaid>
 	</participant>
 	<participant id="6">
 		<event_id>4</event_id>
@@ -64,6 +64,6 @@
 		<city>Entenhausen</city>
 		<phonenumber>0781478523</phonenumber>
 		<email>holi@me.ch</email>
-		<prepaied>true</prepaied>
+		<prepaid>true</prepaid>
 	</participant>
-</participants>
+<participant id="7"><event_id>2</event_id><prename>Nino</prename><name>Padrutt</name><street>Fenkernstrasse 27</street><zipcode>6010</zipcode><city>Kriens</city><phonenumber>079 123 45 67</phonenumber><email>asdfas@fasdfc.ch</email><prepaid>true</prepaid></participant></participants>
