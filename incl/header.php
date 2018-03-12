@@ -9,6 +9,7 @@
 <script type="text/javascript" src="assets/uikit/js/uikit.min.js"></script>
 <link rel="stylesheet" href="assets/uikit/css/uikit.min.css"/>
 <link rel="stylesheet" href="assets/css/style.css"/>
+<meta charset="utf-8"/>
 <meta name="keywords" content="Behindertensport Schweiz" />
 <meta name="description" content="Sport hält Körper und Geist fit, bringt Menschen zusammen und erweitert Horizonte. Wir engagieren uns dafür, dass dies für so viele Menschen wie möglich zur Verfügung steht."/>
 
