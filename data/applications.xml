@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<participants xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="disabilities.xsd">
+<participants xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="applications.xsd">
 	<participant id="1">
 		<event_id>2</event_id>
 		<prename>Hans</prename>
