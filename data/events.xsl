@@ -24,6 +24,7 @@
 			</tr>
 
 			<xsl:for-each select="/events/event">
+			   <xsl:sort select="dateTime"/>
 				<xsl:variable name="event_node" select="."></xsl:variable>
 				<xsl:variable name="event_id" select="@id"></xsl:variable>
 				<xsl:if

@@ -62,5 +62,12 @@ table.app_table tr.app_table td{
 	}
 
 
+td.logo_container{
+	width:200px;
+}
+
+img.links_logo{
+	max-height:150px;
+}
 
 
