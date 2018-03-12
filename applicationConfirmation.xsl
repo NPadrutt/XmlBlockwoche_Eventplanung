@@ -25,11 +25,6 @@
 				</fo:simple-page-master>
 			</fo:layout-master-set>
 			<fo:page-sequence master-reference="application_confirmation">
-				<fo:static-content flow-name="xsl-region-before">
-					<fo:block text-align="center" font-size="8pt">
-						<fo:page-number />
-					</fo:block>
-				</fo:static-content>
 				<fo:flow flow-name="xsl-region-body">
 					<fo:block font-size="19pt" font-family="sans-serif"
 						line-height="24pt" space-after.optimum="20pt" background-color="#ADD8E6"
@@ -65,16 +60,11 @@
 
 		<fo:block>
 			Wir bestätigen dir hiermit gerne deine Anmeldung.
-			Anschliessend findest du alle Informationen zu der Verantstaltung:
+			Nachfolgend findest du alle Informationen zu der Verantstaltung:
 		</fo:block>
 
 		<fo:block linefeed-treatment="preserve">
 			<xsl:text>&#xA;</xsl:text>
-		</fo:block>
-	
-		<fo:block>
-			Veranstaltung:
-			<xsl:value-of select="name" />
 		</fo:block>
 		<fo:block>
 			Datum Begin:
@@ -96,13 +86,36 @@
 			Maximal Teilnehmer:
 			<xsl:value-of select="max_participants" />
 		</fo:block>
+				<fo:block linefeed-treatment="preserve">
+			<xsl:text>&#xA;</xsl:text>
+		</fo:block>
+		<fo:block color="black"  font-weight="bold">
+				Personalien
+		</fo:block>
+		<fo:block color="black">
+			<xsl:value-of select="$participant/prename" />
+			<xsl:value-of select="concat(' ',$participant/name)" />
+		</fo:block>
+		<fo:block color="black">
+		<xsl:value-of select="$participant/street" />
+		</fo:block>
 
+		<fo:block white-space-collapse="false">
+			<xsl:value-of select="$participant/zipcode" />
+			<xsl:value-of select="concat(' ',$participant/city)" />
+		</fo:block>
+		<fo:block white-space-collapse="false">
+			<xsl:value-of select="$participant/phonenumber" />
+		</fo:block>
+		<fo:block white-space-collapse="false">
+			<xsl:value-of select="$participant/email" />
+		</fo:block>
 		<fo:block linefeed-treatment="preserve">
 			<xsl:text>&#xA;</xsl:text>
 		</fo:block>
 
-		<fo:block>Wir freuen uns auf eine tolle Zeit mit dir. Bei Fragen,
-			zögere nicht dich direkt bei uns zu melden.</fo:block>
+		<fo:block>Wir freuen uns auf eine tolle Zeit mit dir. 
+			Zögere bei Fragen nicht, dich direkt bei uns zu melden.</fo:block>
 
 		<fo:block linefeed-treatment="preserve">
 			<xsl:text>&#xA;</xsl:text>
@@ -122,29 +135,10 @@
 		<fo:block>Email: info@xml-sporthalle.ch</fo:block>
 		<fo:block>Telefon: 041 420 12 34</fo:block>
 
-		<fo:block color="black">
-			<xsl:value-of select="$participant/prename" />
-			<xsl:value-of select="concat(' ',$participant/name)" />
-		</fo:block>
-		<xsl:value-of select="$participant/street" />
 
-		<fo:block white-space-collapse="false">
-			<xsl:value-of select="$participant/zipcode" />
-			<xsl:value-of select="concat(' ',$participant/city)" />
-		</fo:block>
-		<fo:block white-space-collapse="false">
-
-			<xsl:value-of select="$participant/phonenumber" />
-		</fo:block>
-		<fo:block white-space-collapse="false">
-			<xsl:value-of select="$participant/customer/mail" />
-		</fo:block>
 
 	</xsl:template>
 
-	<xsl:template match="participants">
-		<xsl:apply-templates select="participant[@id=$participantIdParam]" />
-	</xsl:template>
 
 
 </xsl:transform>
