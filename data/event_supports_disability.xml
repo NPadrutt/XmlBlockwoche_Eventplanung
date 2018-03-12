@@ -47,4 +47,12 @@
 		<event_id>7</event_id>
 		<disability_id>4</disability_id>
 	</relation>
+        <relation>
+		<event_id>1</event_id>
+		<disability_id>3</disability_id>
+	</relation>
+        <relation>
+		<event_id>1</event_id>
+		<disability_id>4</disability_id>
+	</relation>
 </relations>

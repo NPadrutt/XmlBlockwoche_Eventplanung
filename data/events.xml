@@ -3,8 +3,8 @@
 		<dateTime>2018-02-03T09:05:00</dateTime>
 		<date_beginning>3.2.2018, 9.05h</date_beginning>
 		<date_end>8.2.2018, 16.00h</date_end>
-		<name>XML-Blockwoche</name>
-		<location>S41.309</location>
+		<name>Tischtennis</name>
+		<location>Halle A</location>
 		<participation_fee>0</participation_fee>
 		<max_participants>30</max_participants>
         </event>
@@ -48,7 +48,7 @@
 		<dateTime>2018-05-10T17:00:00</dateTime>
 		<date_beginning>10.5.2018, 17.00h</date_beginning>
 		<date_end>10.5.2018, 20.00h</date_end>
-		<name>Volleyball für Einarmige</name>
+		<name>Volleyball</name>
 		<location>Halle D</location>
 		<participation_fee>0</participation_fee>
 		<max_participants>30</max_participants>
