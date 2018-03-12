@@ -7,7 +7,9 @@ include ("incl/header.php");
 ?>
 
 <h1>Willkommen</h1>
-<p>Behindertensport ist ....</p>
+<p>
+    Sport hält Körper und Geist fit, bringt Menschen zusammen und erweitert Horizonte. Wir engagieren uns dafür, dass dies für so viele Menschen wie möglich zur Verfügung steht.
+</p>
 <p>
 	<a class="uk-button uk-button-default" href="events.php">Alle Events</a>
 </p>
