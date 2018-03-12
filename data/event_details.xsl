@@ -9,20 +9,17 @@
 
 	<xsl:template match="/">
 		<xsl:variable name="event_node" select="//event[@id = $event_id]"></xsl:variable>
-		<xsl:value-of select="$event_node/name"></xsl:value-of>
+		<b><xsl:value-of select="$event_node/name"></xsl:value-of></b>
 		<br />
 		<xsl:value-of select="$event_node/date_beginning" />
 		<xsl:text disable-output-escaping="yes"> &amp;mdash; </xsl:text>
 		<xsl:value-of select="$event_node/date_end" />
 		<br />
 		<xsl:value-of select="$event_node/location" /><br/>
-		<xsl:value-of
-			select="count(document('applications.xml')//participant/event_id[text() = $event_id]/..)">
-		</xsl:value-of>
-		/
-		<xsl:value-of select="$event_node/max_participants" /> Teilnehmer <br/>
+		Maximale Anzahl Teilnehmer: 
+		<xsl:value-of select="$event_node/max_participants" />  <br/>
 
-		CHF <b><xsl:value-of select="$event_node/participation_fee" /></b>
+		Kosten <xsl:value-of select="$event_node/participation_fee" />.-
 	</xsl:template>
 
 	<!-- Add rows to table -->

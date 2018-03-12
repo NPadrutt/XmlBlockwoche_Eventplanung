@@ -30,7 +30,7 @@
 				<xsl:value-of select="description_de" />
 			</td>
 			<td align="left">
-				<a class="uk-button uk-button-primary uk-float-right">
+				<a class="uk-button uk-button-primary uk-float-right"  style="width: 180px;">
 					<xsl:attribute name="href">
 			    	<xsl:value-of select="concat('events.php?category=', @id)" />
 			    </xsl:attribute>

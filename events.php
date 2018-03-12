@@ -16,8 +16,6 @@ if (isset($_GET["category"])) {
 echo get_events_by_disability($categoryId);
 ?> 
 
-</tbody>
-</table>
 
 <?php
 

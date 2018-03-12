@@ -39,16 +39,16 @@ ul.uk-navbar-nav li.active{
 }
 
 .uk-navbar-item, .uk-navbar-nav > li > a{
-	font-size:1.1em;
+	font-size:1.05em;
 }
 
 
 div.content-panel{
-	padding:15px;
-	font-size:1.1em;
-	color:#202020;
-	background-color:#F1F3F6;
-	border:1px solid #ddd;
+	padding:30px 30px;
+	font-size:1.05em;
+	color:#282828;
+	background-color:#f6f6f6;
+	border:1px solid #efefef;
 }
 
 table.app_table tr.app_table th{

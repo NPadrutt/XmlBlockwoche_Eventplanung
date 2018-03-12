@@ -17,7 +17,7 @@ include ("incl/header.php");
 				Altersklassen, Behinderungsformen, in unterschiedlichen Sportarten
 				und stets mit dem Ziel der Integration und Inklusion.</td>
 			<td class="logo_container"><a href="https://www.plusport.ch"><img
-					src="graphics/logo_plusport.jpg" class="links_logo" /></a></td>
+					src="graphics/logo_plusport.jpg" class="links_logo" alt="Logo Plusport"/></a></td>
 		</tr>
 
 		<tr>
@@ -30,7 +30,7 @@ include ("incl/header.php");
 				(davon 100 fest angestellt) sowie 1'800 Freiwillige und
 				Ehrenamtliche ermöglichen ein breites Dienstleistungsangebot</td>
 			<td class="logo_container"><a href="http://www.spv.ch"><img
-					src="graphics/logo-spv.jpg" class="links_logo" /></a></td>
+					src="graphics/logo-spv.jpg" class="links_logo"  alt="Logo SPV"/></a></td>
 		</tr>
 
 		<tr>
@@ -45,7 +45,7 @@ include ("incl/header.php");
 				Paralympischen Komitees (IPC) in Bonn, welches das Pendant zum
 				Internationalen Olympischen Komitee (IOC) ist.</td>
 			<td class="logo_container"><a href="http://www.swissparalympic.ch/"><img
-					src="graphics/logo_swissparalympics.jpg" class="links_logo" /></a>
+					src="graphics/logo_swissparalympics.jpg" class="links_logo"  alt="Logo Swissparalypic"/></a>
 			</td>
 		</tr>
 	</tbody>

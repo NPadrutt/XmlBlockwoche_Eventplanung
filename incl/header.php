@@ -1,14 +1,17 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>Herzlich willkommen</title>
-<meta charset="utf-8">
-<script src="assets/jquery/jquery-3.2.1.min.js"></script>
+<title>XML-Sporthalle</title>
+<script type="text/javascript" src="assets/jquery/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="assets/uikit/js/uikit.min.js"></script>
-<link rel="stylesheet" href="assets/uikit/css/uikit.min.css">
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/uikit/css/uikit.min.css"/>
+<link rel="stylesheet" href="assets/css/style.css"/>
+<meta name="keywords" content="Behindertensport Schweiz" />
+<meta name="description" content="Sport hält Körper und Geist fit, bringt Menschen zusammen und erweitert Horizonte. Wir engagieren uns dafür, dass dies für so viele Menschen wie möglich zur Verfügung steht."/>
+
 </head>
 <body>
 <?php 
@@ -44,7 +47,7 @@ switch($scriptname){
 					<div class="uk-navbar-left">
 						<ul class="uk-navbar-nav">
 							<li><a href="index.php"> <img id="logo" src="graphics/logo.png"
-									style="padding-top: 0px;" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+									style="padding-top: 0px;" alt="Logo XML Sporthalle"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 							</a></li>
 							<li <?php if ($page == "home"){echo "class='active'";}?> ><a href="index.php"> Startseite
 							</a></li>

@@ -19,7 +19,7 @@
 				</th>
 				<th>Ausgelegt für</th>
 				<th>Teilnehmer</th>
-				<th>Kosten</th>
+				<th>CHF</th>
 				<th>Bestellen</th>
 			</tr>
 
