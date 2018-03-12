@@ -27,7 +27,7 @@
 			<fo:page-sequence master-reference="application_confirmation">
 				<fo:flow flow-name="xsl-region-body">
 					<fo:block font-size="19pt" font-family="sans-serif"
-						line-height="24pt" space-after.optimum="20pt" background-color="#ADD8E6"
+						line-height="24pt" space-after.optimum="20pt" background-color="#353837"
 						color="white" text-align="center" padding-top="5pt"
 						padding-bottom="5pt">Anmeldebestätigung</fo:block>
 					<!-- For each event ... -->
